@@ -8,14 +8,14 @@
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   user-select: none;
-  width: 90%;  /* Add this to allow shrinking on smaller screens */
+  width: 90%;  
   box-sizing: border-box;
 }
 
 .char-input {
   display: inline-block;
   width: 280px;
-  max-width: 100%;  /* allow input to shrink on small screens */
+  max-width: 100%;  
   padding: 0.6rem 1rem;
   font-size: 1rem;
   border-radius: 8px;

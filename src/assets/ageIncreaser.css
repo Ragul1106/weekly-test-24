@@ -6,7 +6,7 @@
   text-align: center;
   max-width: 500px;
   width: 90%;
-  margin: 5% auto 2rem auto; /* center horizontally and add vertical spacing */
+  margin: 5% auto 2rem auto;
   box-sizing: border-box;
 }
 
@@ -21,7 +21,14 @@
   display: block;
   box-sizing: border-box;
 }
-
+.age-profile button{
+  background-color: #d6416d;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+.age-profile button:hover{
+  background-color: #fd0470;
+}
 .highlight-name {
   color: #ff6f61;
   font-weight: bold;
