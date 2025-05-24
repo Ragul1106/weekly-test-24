@@ -57,3 +57,38 @@ body, html, #root {
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+
+/* Responsive Navbar tweaks */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-tabs li {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .brand {
+    font-size: 1.3rem;
+  }
+
+  .nav-tabs li {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}

@@ -74,3 +74,34 @@ h2 {
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .fruit-select {
+    min-width: 100%;
+    max-width: 300px;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .clear-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.7rem 0;
+    font-size: 1.1rem;
+  }
+
+  .fruit-display {
+    padding: 1.5rem 2rem;
+    width: 70vw;
+    font-size: 1rem;
+  }
+
+  .fruit-emoji {
+    font-size: 3rem;
+  }
+
+  .fruit-name {
+    font-size: 1.5rem;
+  }
+}

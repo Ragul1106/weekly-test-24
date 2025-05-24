@@ -6,8 +6,7 @@
   text-align: center;
   max-width: 480px;
   width: 100%;
-  margin-top: 10%;
-  margin-left: 30%;
+  margin: 10% auto 0; /* Center horizontally with auto margin */
 }
 
 .login-card input {
@@ -16,8 +15,9 @@
   border: 2px solid #ccc;
   width: 100%;
   max-width: 300px;
-  margin: 1rem 0;
+  margin: 1rem auto;
   font-size: 1rem;
+  display: block; /* Ensure centering */
 }
 
 .login-card button {
@@ -29,7 +29,10 @@
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s ease;
-  margin-bottom: 1rem;
+  margin: 1rem auto; /* Center horizontally */
+  display: block; /* Ensure centering */
+  max-width: 300px;
+  width: 100%;
 }
 
 .login-card button:hover {
@@ -42,4 +45,18 @@
 
 .login-button.logout {
   background: #e53e3e;
+}
+
+
+@media (max-width: 480px) {
+  .login-card {
+    margin-top: 5%;
+    padding: 2rem 1.5rem;
+    max-width: 90vw;
+  }
+
+  .login-card input,
+  .login-card button {
+    max-width: 80%;
+  }
 }

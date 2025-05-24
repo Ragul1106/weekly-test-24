@@ -8,50 +8,20 @@
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   user-select: none;
-}
-
-.char-counter-container h2 {
-  margin-bottom: 1.5rem;
-  color: #333;
+  width: 90%;  /* Add this to allow shrinking on smaller screens */
+  box-sizing: border-box;
 }
 
 .char-input {
-  display: inline-block;   
-  width: 280px;           
+  display: inline-block;
+  width: 280px;
+  max-width: 100%;  /* allow input to shrink on small screens */
   padding: 0.6rem 1rem;
   font-size: 1rem;
   border-radius: 8px;
   border: 2px solid #ccc;
   transition: border-color 0.3s ease;
   outline: none;
-}
-
-.char-input:focus {
-  border-color: #d6416d;
-}
-
-.char-count {
-  margin: 1rem 0;
-  font-weight: 700;
-  color: lightcoral;
-  font-size: 1.2rem;
-}
-
-.clear-btn {
-  background: #d6416d;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.5rem;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 5px 15px rgba(214, 65, 109, 0.5);
-  transition: background 0.3s ease;
-}
-
-.clear-btn:hover {
-  background: #ff6f61;
-  box-shadow: 0 8px 25px rgba(255, 111, 97, 0.6);
 }
 
 .live-preview-modal {
@@ -66,4 +36,27 @@
   word-wrap: break-word;
   user-select: text;
   text-align: center;
+  /* Centering with flexbox if needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .char-counter-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .char-input {
+    width: 100%;
+  }
+
+  .clear-btn {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
 }

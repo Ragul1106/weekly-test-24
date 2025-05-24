@@ -5,8 +5,9 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: 500px;
- margin-top: 5%;
-  margin-left: 30%;
+  width: 90%;
+  margin: 5% auto 2rem auto; /* center horizontally and add vertical spacing */
+  box-sizing: border-box;
 }
 
 .age-profile input {
@@ -15,8 +16,10 @@
   border: 1.8px solid #ccc;
   width: 100%;
   max-width: 320px;
-  margin: 1rem 0;
+  margin: 1rem auto;
   font-size: 1rem;
+  display: block;
+  box-sizing: border-box;
 }
 
 .highlight-name {
@@ -28,4 +31,17 @@
   color: #2e7d32;
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+
+@media (max-width: 600px) {
+  .age-profile {
+    padding: 1.5rem 1.2rem;
+    max-width: 95%;
+    margin-top: 4rem;
+  }
+
+  .age-profile input {
+    max-width: 100%;
+  }
 }
