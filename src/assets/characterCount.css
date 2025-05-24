@@ -33,10 +33,11 @@
   color: #333;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   max-width: 100%;
-  word-wrap: break-word;
+  word-wrap: break-word;   
+  overflow-wrap: anywhere;  
+  white-space: normal;      
   user-select: text;
   text-align: center;
-  /* Centering with flexbox if needed */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +45,8 @@
   margin-right: auto;
 }
 
-/* Responsive tweaks */
+
+
 @media (max-width: 480px) {
   .char-counter-container {
     padding: 1.5rem 1rem;
